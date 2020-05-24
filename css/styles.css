@@ -419,8 +419,8 @@ ul {
   color: #ffffff;
   text-decoration: none;
 }
-.letter link {
-  margin-bottom: 9px;
+.address .letter-link {
+  padding-bottom: 9px;
 }
 
 .join-container {
