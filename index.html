@@ -8,11 +8,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./normalize" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="page-header container">
         <nav class="nav-container">
           <a href="" class="logo">
             Web
@@ -29,11 +30,11 @@
 
         <ul class="auth-nav list">
           <li class="item">
-            <img src="./img/Mail.svg" alt="Mail" />
+            <img src="./img/mail.svg" alt="Mail" />
             <a href="" class="mail link">info@devstudio.com</a>
           </li>
           <li class="item">
-            <img src="./img/Mobile.png" alt="Номер телефона" />
+            <img src="./img/mobile.svg" alt="Номер телефона" />
             <a href="" class="phone link">+380961111111</a>
           </li>
         </ul>
@@ -55,7 +56,7 @@
         <div class="container">
           <ul class="features-list list">
             <li class="item">
-              <img src="./img/Antena.svg" alt="Антена" />
+              <img src="./img/antena.svg" alt="Антена" />
               <h3 class="title">Внимание к деталям</h3>
               <p class="features-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -63,7 +64,7 @@
               </p>
             </li>
             <li class="item">
-              <img src="./img/Clock.svg" alt="Часы" />
+              <img src="./img/clock.svg" alt="Часы" />
               <h3 class="title">Пунктуальность</h3>
               <p class="features-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -71,7 +72,7 @@
               </p>
             </li>
             <li class="item">
-              <img src="./img/Computer.svg" alt="Компьютер" />
+              <img src="./img/computer.svg" alt="Компьютер" />
               <h3 class="title">Планирование</h3>
               <p class="features-text">
                 Равным образом консультация с широким активом в значительной
@@ -79,7 +80,7 @@
               </p>
             </li>
             <li class="item">
-              <img src="./img/Kosmonavt.svg" alt="Космонавт" />
+              <img src="./img/kosmonavt.svg" alt="Космонавт" />
               <h3 class="title">Современные технологии</h3>
               <p class="features-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -91,24 +92,24 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="works">
+      <section class="works section">
         <div class="container">
           <h2 class="works-title">Чем мы занимаемся</h2>
           <ul class="works-list list">
             <li class="item">
-              <img src="./img/Notebook.png" width="370" alt="Ноутбук" />
+              <img src="./img/notebook.png" width="370" alt="Ноутбук" />
               <h3 class="action-title">Десктопные приложения</h3>
             </li>
             <li class="item">
               <img
-                src="./img/Mobile-phone.png"
+                src="./img/mobile-phone.png"
                 width="370"
                 alt="Мобильный телефон"
               />
               <h3 class="action-title">Мобильные приложение</h3>
             </li>
             <li class="item">
-              <img src="./img/Monitor.png" width="370" alt="Экран монитора" />
+              <img src="./img/monitor.png" width="370" alt="Экран монитора" />
               <h3 class="action-title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -116,13 +117,14 @@
       </section>
 
       <!--Наша команда-->
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="item">
               <img
-                src="./img/John.jpg"
+                class="team-photo"
+                src="./img/john.jpg"
                 width="270"
                 height="260"
                 alt="Фото члена команды"
@@ -156,7 +158,8 @@
 
             <li class="item">
               <img
-                src="./img/Marta.jpg"
+                class="team-photo"
+                src="./img/marta.jpg"
                 width="270"
                 height="260"
                 alt="Фото члена команды"
@@ -190,7 +193,8 @@
 
             <li class="item">
               <img
-                src="./img/Robert.jpg"
+                class="team-photo"
+                src="./img/robert.jpg"
                 width="270"
                 height="260"
                 alt="Фото члена команды"
@@ -224,7 +228,8 @@
 
             <li class="item">
               <img
-                src="./img/Martin.jpg"
+                class="team-photo"
+                src="./img/martin.jpg"
                 width="270"
                 height="260"
                 alt="Фото члена команды"
@@ -260,7 +265,7 @@
       </section>
 
       <!--Постоянные клиенты-->
-      <section class="clients">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -302,53 +307,53 @@
     <!--Футер-->
     <footer class="page-footer">
       <div class="container">
-        <div class="adress-container">
-          <address class="address">
-            <a href="" class="logo">
-              Web
-              <span class="footer-studio">Studio</span>
-            </a>
-            г. Киев, пр-т Леси Украинки, 26
-            <br />
-            <a href="" class="letter link">
-              info@example.com
-              <br />
-            </a>
-            <a href="" class="number link">+38 099 111 11 11</a>
-            <br />
-          </address>
-        </div>
+        <div class="location">
+          <div class="address-container">
+            <address class="address">
+              <a href="" class="logo">
+                Web
+                <span class="footer-studio">Studio</span>
+              </a>
+              <a href="" class="direction-link">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+              <a href="" class="letter link">
+                info@example.com
+              </a>
+              <a href="" class="number link">+38 099 111 11 11</a>
+            </address>
+          </div>
 
-        <div class="join-container">
-          <b class="sign">Присоединяйтесь</b>
-          <ul class="footer-links list">
-            <li class="item">
-              <a href="" aria-label="Ссылка на Instagram" class="link">
-                Instagram
-              </a>
-            </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на Twitter" class="link">
-                Twitter
-              </a>
-            </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на Facebook" class="link">
-                Facebook
-              </a>
-            </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на LinkedIn" class="link">
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="join-container">
+            <b class="sign">Присоединяйтесь</b>
+            <ul class="footer-links list">
+              <li class="item">
+                <a href="" aria-label="Ссылка на Instagram" class="link">
+                  Instagram
+                </a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на Twitter" class="link">
+                  Twitter
+                </a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на Facebook" class="link">
+                  Facebook
+                </a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на LinkedIn" class="link">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="mailing-container">
-          <b class="mailing">Подпишитесь на рассылку</b>
+          <div class="mailing-container">
+            <b class="mailing">Подпишитесь на рассылку</b>
+          </div>
         </div>
-
         <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>

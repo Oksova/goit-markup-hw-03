@@ -60,13 +60,13 @@ ul {
 
 /* Logo */
 
-.header .container {
+.page-header {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
-  height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: aquamarine;
 }
 
@@ -100,8 +100,11 @@ ul {
 /* Site-nav-list */
 
 .auth-nav .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-left: 10px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -121,6 +124,8 @@ ul {
 }
 
 .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 .link-current {
@@ -130,13 +135,10 @@ ul {
 .site-nav .link:focus {
   display: flexbox;
   color: var(--accent-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
-.auth-nav {
-  display: flex;
-  margin-left: auto;
+.auth-nav .item {
+  display: inline-flex;
 }
 
 .auth-nav .item:not(:last-child) {
@@ -238,6 +240,9 @@ ul {
 }
 
 /* Чем мы занимаемся */
+.works .container {
+  padding-top: 94px;
+}
 .works-list {
   display: flex;
 }
@@ -248,10 +253,8 @@ ul {
   margin-right: 30px;
 }
 .container .works-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 .works-title {
   font-style: normal;
@@ -265,7 +268,6 @@ ul {
 .action-title {
   margin-top: 0;
   margin-bottom: 0;
-  width: 370px;
   padding-top: 27px;
   padding-bottom: 27px;
   border-radius: 0px 0px 4px 4px;
@@ -287,6 +289,7 @@ ul {
 }
 .team-list .item {
   width: 270px;
+  padding-bottom: 24px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -308,12 +311,13 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.team-photo {
+  margin-bottom: 30px;
+}
 .name-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  /* padding-top: 30px; */
   text-align: center;
 
   font-style: normal;
@@ -324,8 +328,7 @@ ul {
 }
 .team-text {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   text-align: center;
 
   color: var(--secondary-text-color);
@@ -336,10 +339,8 @@ ul {
 }
 .social-links {
   display: flex;
-  padding-bottom: 24px;
   padding-left: 0;
   text-align: center;
-  min-width: 270px;
 
   background-color: teal;
 }
@@ -384,12 +385,15 @@ ul {
 }
 
 /* Footer */
+
 .page-footer {
+  background-color: #2f303a;
+  font-family: Roboto, sans-serif;
+}
+.location {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  background-color: #2f303a;
-  font-family: Roboto, sans-serif;
 }
 
 .address {
@@ -409,6 +413,14 @@ ul {
   margin-right: auto;
   padding-top: 48px;
   padding-bottom: 10px;
+}
+.direction-link {
+  margin-bottom: 9px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.letter link {
+  margin-bottom: 9px;
 }
 
 .join-container {
@@ -434,7 +446,8 @@ ul {
   margin-right: 10px;
 }
 
-.adress .link {
+.address .link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: normal;
@@ -469,7 +482,6 @@ ul {
   color: rgba(255, 255, 255, 0.4);
 }
 .link {
-  background: rgba(255, 255, 255, 0.1);
   color: var(--primary-white-color);
 }
 .link:hover {
@@ -480,13 +492,15 @@ ul {
 }
 
 /* Portfolio */
-
+.portfolio-content {
+  padding-top: 93px;
+}
 .selection {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-top: 93px;
-  padding-bottom: 50px;
+  padding-left: 0;
+  margin-bottom: 50px;
 }
 .selection .button-list:not(:last-child) {
   margin-right: 8px;
@@ -548,6 +562,9 @@ ul {
 .projects .item:nth-child(3n) {
   margin-right: 0;
 }
+.projects .item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
 .card-content {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
@@ -559,7 +576,7 @@ ul {
 }
 
 .project-title {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   margin: 0;
   font-style: normal;
   font-weight: bold;
@@ -569,6 +586,7 @@ ul {
 }
 .project-selection {
   margin: 0;
+  padding: 0;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
