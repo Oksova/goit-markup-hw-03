@@ -281,8 +281,12 @@ ul {
   text-transform: uppercase;
 }
 /* Team */
+
 .team {
   background-color: #f5f4fa;
+}
+.team .container {
+  padding-top: 94px;
 }
 .team-list {
   display: flex;
@@ -301,9 +305,7 @@ ul {
 
 .team-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -347,11 +349,12 @@ ul {
 
 /* Наши клиенты */
 
+.clients .container {
+  padding-top: 94px;
+}
 .clients-title {
   margin-top: 0;
-  margin-bottom: 0px;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-style: normal;
   font-weight: bold;
@@ -394,6 +397,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding-top: 48px;
 }
 
 .address {
@@ -411,25 +415,16 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 48px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-.direction-link {
-  margin-bottom: 9px;
+.page-footer .direction {
   color: #ffffff;
-  text-decoration: none;
-}
-.address .letter-link {
-  padding-bottom: 9px;
 }
 
-.join-container {
-  display: block;
-}
 .sign {
   display: block;
   margin: 0;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: bold;
@@ -456,10 +451,13 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.address .link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .mailing-container {
   display: inline-block;
   margin: 0;
-  padding-bottom: 21px;
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: bold;
