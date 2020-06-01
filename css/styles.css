@@ -43,7 +43,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 ul {
   list-style: none;
@@ -67,7 +66,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: aquamarine;
 }
 
 .nav-container {
@@ -99,21 +97,6 @@ ul {
 
 /* Site-nav-list */
 
-.auth-nav .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-left: 10px;
-
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .site-nav {
   display: flex;
   margin-left: 85px;
@@ -137,8 +120,30 @@ ul {
   color: var(--accent-color);
 }
 
+.auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: 10px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .auth-nav .item {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  --color1: #757575;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+  --color1: var(--accent-color);
 }
 
 .auth-nav .item:not(:last-child) {
@@ -149,12 +154,6 @@ ul {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
-.mail:hover {
-  color: var(--accent-color);
-}
-.phone:hover {
-  color: var(--accent-color);
-}
 
 /* Основная секция */
 
@@ -162,17 +161,30 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  align-items: center;
+
+  max-width: 1600px;
+  height: 600px;
+  background-color: coral;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../img/hero.jpg');
 }
 .main-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
   color: var(--primary-white-color);
-  background-color: brown;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 56px;
 }
+
 .button {
   font-family: inherit;
   color: var(--primary-white-color);
@@ -183,6 +195,7 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border: none;
 }
 .hero .button {
   display: inline-block;
@@ -195,6 +208,7 @@ ul {
 .button:hover,
 .button:focus {
   color: var(--primary-text-color);
+  cursor: pointer;
 }
 
 /* Преимущества */
@@ -218,6 +232,18 @@ ul {
 .features-list .item {
   width: 270px;
 }
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
 .features-list .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -319,7 +345,7 @@ ul {
 .name-title {
   margin-top: 0;
   margin-bottom: 10px;
-  /* padding-top: 30px; */
+
   text-align: center;
 
   font-style: normal;
@@ -341,10 +367,24 @@ ul {
 }
 .social-links {
   display: flex;
-  padding-left: 0;
-  text-align: center;
+  padding: 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-  background-color: teal;
+.social-links .link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  --color2: #afb1b8;
+}
+
+.team-links .link:hover {
+  background-color: var(--accent-color);
+  --color2: var(--primary-white-color);
 }
 
 /* Наши клиенты */
@@ -378,6 +418,7 @@ ul {
   height: 90px;
   border-radius: 4px;
   width: 170px;
+  --color2: #afb1b8;
 }
 
 .clients-list .item:not(:last-child) {
@@ -385,6 +426,7 @@ ul {
 }
 .clients-list .item:hover {
   border-color: var(--accent-color);
+  --color2: var(--accent-color);
 }
 
 /* Footer */
@@ -441,6 +483,21 @@ ul {
   margin-right: 10px;
 }
 
+.footer-links .link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  --color2: #ffffff;
+}
+
+.footer-links .link:hover {
+  background-color: var(--accent-color);
+}
+
 .address .link {
   display: block;
   color: rgba(255, 255, 255, 0.6);
@@ -466,6 +523,30 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.sign-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 900;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  --color3: #ffffff;
+}
+.sign-button .icon {
+  margin-left: 10px;
+}
+.sign-button:hover {
+  color: var(--primary-text-color);
+  --color3: var(--primary-text-color);
+}
+
 .copyright {
   border-top: 1px solid #ececec;
   margin-top: 0;
@@ -479,9 +560,7 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
 }
-.link {
-  color: var(--primary-white-color);
-}
+
 .link:hover {
   color: var(--accent-color);
 }
@@ -503,13 +582,9 @@ ul {
 .selection .button-list:not(:last-child) {
   margin-right: 8px;
 }
-.selection .button-list {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
-}
+
 .selection .button {
   padding: 6px 22px;
-
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -520,17 +595,16 @@ ul {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
   border-radius: 4px;
+  border: none;
 }
-.selection .button:hover {
-  color: var(--accent-color);
-}
+.selection .button:hover,
 .selection .button:focus {
-  color: var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .selection .button-all {
   padding: 6px 22px;
-
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: Roboto, sans-serif;
@@ -541,6 +615,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  border: none;
 }
 
 /* Карточки */
@@ -556,6 +631,8 @@ ul {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .projects .item:nth-child(3n) {
   margin-right: 0;

@@ -29,12 +29,21 @@
 
         <ul class="auth-nav list">
           <li class="item">
-            <img src="./img/mail.svg" alt="Mail" />
-            <a href="" class="mail link">info@devstudio.com</a>
+            <a href="mailtoinfo@devstudio.com" class="mail link">
+              <svg class="icon" width="16" height="11.2">
+                <use href="./img/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
+        
           <li class="item">
-            <img src="./img/mobile.svg" alt="Номер телефона" />
-            <a href="" class="phone link">+380961111111</a>
+            <a href="tel+380961111111" class="phone link">
+              <svg class="icon" width="10" height="14.94">
+                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +380961111111
+            </a>
           </li>
         </ul>
       </div>
@@ -110,7 +119,7 @@
             </li>
 
             <li class="item">
-              <img src="./img/screen.jpg" width="370" alt="Экран монитора" />
+              <img src="./img/monitor.jpg" width="370" alt="Экран монитора" />
               <div class="card-content">
                 <h2 class="project-title">Inspiration has no Borders</h2>
                 <p class="project-selection">Веб-сайт</p>
@@ -146,59 +155,73 @@
     </main>
 
     <!--Футер-->
-    <footer class="page-footer">
-      <div class="container">
-        <div class="location">
-          <div class="address-container">
-            <address class="address">
-              <a href="" class="logo">
-                Web
-                <span class="footer-studio">Studio</span>
-              </a>
-    
-              <a href="" class="direction link">
-                г. Киев, пр-т Леси Украинки, 26
-              </a>
-    
-              <a href="" class="letter link">
-                info@example.com
-              </a>
-              <a href="" class="number link">+38 099 111 11 11</a>
-            </address>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="location">
+            <div class="address-container">
+              <address class="address">
+                <a href="" class="logo">
+                  Web
+                  <span class="footer-studio">Studio</span>
+                </a>
+      
+                <a href="mailtoinfo@example.com" class="direction link">
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+      
+                <a href="" class="letter link">
+                  info@example.com
+                </a>
+                <a href="tel+38 099 111 11 11" class="number link">+38 099 111 11 11</a>
+              </address>
+            </div>
+      
+            <div class="join-container">
+              <b class="sign">Присоединяйтесь</b>
+              <ul class="footer-links list">
+                <li class="item">
+                  <a href="" class="link" aria-label="Ссылка на Instagram">
+                    <svg class="icon" width="20" height="20">
+                      <use href=./img/symbol-defs.svg#icon-instagram></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="link" aria-label="Ссылка на Twitter">
+                    <svg class="icon" width="20" height="20">
+                      <use href=./img/symbol-defs.svg#icon-twitter></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="link" aria-label="Ссылка на Facebook">
+                    <svg class="icon" width="20" height="20">
+                      <use href=./img/symbol-defs.svg#icon-facebook></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="" class="link" aria-label="Ссылка на LinkedIn">
+                    <svg class="icon" width="20" height="20">
+                      <use href=./img/symbol-defs.svg#icon-linkedin></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="mailing-container">
+              <b class="mailing">Подпишитесь на рассылку</b>
+              <button type="" class="sign-button">Подписаться
+                <svg class="icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-send">
+                  </use>
+                </svg>
+              </button>
+            </div>
           </div>
-    
-          <div class="join-container">
-            <b class="sign">Присоединяйтесь</b>
-            <ul class="footer-links list">
-              <li class="item">
-                <a href="" aria-label="Ссылка на Instagram" class="link">
-                  Instagram
-                </a>
-              </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на Twitter" class="link">
-                  Twitter
-                </a>
-              </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на Facebook" class="link">
-                  Facebook
-                </a>
-              </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на LinkedIn" class="link">
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
-    
-          <div class="mailing-container">
-            <b class="mailing">Подпишитесь на рассылку</b>
-          </div>
+          <p class="copyright">2020 | Developed by GoIT Students</p>
         </div>
-        <p class="copyright">2020 | Developed by GoIT Students</p>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>
